@@ -1,0 +1,100 @@
+.teacher-container .quiz-results {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.teacher-container .results-header {
+  margin-bottom: 2rem;
+}
+
+.teacher-container .results-header h2 {
+  margin: 0 0 1rem;
+  color: #2c3e50;
+  font-weight: var(--font-bold);
+}
+
+.teacher-container .results-stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.teacher-container .stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.teacher-container .stat-label {
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: var(--font-medium);
+}
+
+.teacher-container .stat-value {
+  font-size: 1.5rem;
+  font-weight: var(--font-bold);
+  color: #2c3e50;
+}
+
+.teacher-container .results-table {
+  overflow-x: auto;
+}
+
+.teacher-container .results-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.teacher-container .results-table th {
+  text-align: left;
+  padding: 1rem;
+  background: #f8f9fa;
+  font-weight: var(--font-semibold);
+  color: #666;
+}
+
+.teacher-container .results-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.teacher-container .score-cell {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.teacher-container .score-bar {
+  flex: 1;
+  height: 6px;
+  background: #f0f0f0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.teacher-container .score-progress {
+  height: 100%;
+  background: #4caf50;
+  border-radius: 3px;
+}
+
+.teacher-container .view-details-btn {
+  padding: 0.5rem 1rem;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  color: #666;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.teacher-container .view-details-btn:hover {
+  background: #f8f9fa;
+  border-color: #1976d2;
+  color: #1976d2;
+}

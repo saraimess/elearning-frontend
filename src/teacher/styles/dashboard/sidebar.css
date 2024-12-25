@@ -1,0 +1,45 @@
+.teacher-container .sidebar {
+  width: 250px;
+  background: white; /* Set background to white */
+  color: #2c3e50; /* Set text color to dark */
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px; /* Adjust for fixed navbar */
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 2px 0 4px rgba(0,0,0,0.1); /* Add subtle shadow */
+}
+
+.teacher-container .sidebar-item {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #2c3e50; /* Set text color */
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.teacher-container .sidebar-item:hover,
+.teacher-container .sidebar-item.active {
+  background: #f0f0f0; /* Set hover background */
+}
+
+.teacher-container .sidebar-item:hover .icon-wrapper,
+.teacher-container .sidebar-item.active .icon-wrapper {
+  color: #3498db; /* Change icon color on hover/active */
+}
+
+.teacher-container .icon-wrapper {
+  font-size: 1.5rem;
+  color: #7f8c8d; /* Default icon color */
+}
+
+.teacher-container .sidebar-item span {
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-left: 0.75rem;
+}

@@ -1,0 +1,111 @@
+.teacher-container .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white; /* Set background to white */
+  color: #2c3e50; /* Set text color to dark */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 64px; /* Fixed height */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add subtle shadow */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white; /* Set background to white */
+  color: #2c3e50; /* Set text color to dark */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 64px; /* Fixed height */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add subtle shadow */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1976d2; /* Set brand color */
+}
+
+.navbar-search {
+  flex: 1;
+  margin: 0 2rem;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.notification-btn {
+  background: none;
+  border: none;
+  color: #2c3e50; /* Set icon color */
+  cursor: pointer;
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.teacher-container .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.teacher-container .navbar-brand h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1976d2; /* Set brand color */
+}
+
+.teacher-container .navbar-search {
+  flex: 1;
+  margin: 0 2rem;
+}
+
+.teacher-container .navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.teacher-container .notification-btn {
+  background: none;
+  border: none;
+  color: #2c3e50; /* Set icon color */
+  cursor: pointer;
+  position: relative;
+}
+
+.teacher-container .notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}

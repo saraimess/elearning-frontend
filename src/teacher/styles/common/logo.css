@@ -1,0 +1,15 @@
+.teacher-container .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.teacher-container .logo-icon {
+  font-size: 2rem;
+}
+
+.teacher-container .logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1976d2;
+}

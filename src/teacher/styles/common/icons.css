@@ -1,0 +1,20 @@
+.teacher-container .breadcrumb {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.teacher-container .breadcrumb a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.teacher-container .breadcrumb .separator {
+  color: #666;
+}
+
+.teacher-container .breadcrumb .current {
+  color: #666;
+}

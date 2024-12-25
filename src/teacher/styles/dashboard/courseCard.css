@@ -1,0 +1,296 @@
+.teacher-container .course-card {
+  background: white;
+  border-radius: 15px; /* Increased border-radius for a smoother look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 350px; /* Increased max-width */
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.5s ease-out; /* Adding fade-in animation */
+}
+
+.teacher-container .course-card:hover {
+  transform: translateY(-8px); /* Slightly more pronounced hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.teacher-container .course-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Increased height for a better thumbnail aspect */
+  overflow: hidden;
+  border-bottom: 3px solid #1976d2; /* Adding border for more contrast */
+}
+
+.teacher-container .course-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.teacher-container .course-card:hover .course-thumbnail img {
+  transform: scale(1.1); /* Slightly stronger scale effect on hover */
+}
+
+.teacher-container .course-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Darker overlay for better contrast */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem; /* Improved text size for readability */
+}
+
+.teacher-container .course-overlay span {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* Increased gap for better spacing */
+}
+
+.teacher-container .course-content {
+  padding: 1.5rem; /* Increased padding for more spacious content */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.teacher-container .course-content h3 {
+  margin: 0;
+  font-size: 1.5rem; /* Increased font size for better prominence */
+  color: #2c3e50;
+  font-weight: bold; /* Bolded title for more emphasis */
+}
+
+.teacher-container .course-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem; /* Added more spacing */
+}
+
+.teacher-container .course-progress {
+  width: 100%;
+}
+
+.teacher-container .course-progress span {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1rem; /* Slightly larger font size */
+  color: #666;
+}
+
+.teacher-container .progress-bar {
+  width: 100%;
+  height: 10px; /* Slightly taller progress bar */
+  background: #f5f5f5;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.teacher-container .progress {
+  height: 100%;
+  background: #1976d2;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+.teacher-course-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px; /* Slightly bigger width */
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  animation: fadeIn 0.5s ease-out; /* Fade-in animation */
+}
+
+.teacher-course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.teacher-course-thumbnail {
+  width: 100%;
+  position: relative;
+  height: 220px; /* Increased height for the thumbnail */
+}
+
+.teacher-course-thumbnail img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.teacher-course-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7); /* Darker overlay for contrast */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 0 10px 10px;
+}
+
+.teacher-course-content {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.teacher-course-content h3 {
+  font-size: 1.5rem; /* Increased font size */
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.teacher-course-footer {
+  width: 100%;
+}
+
+.teacher-course-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teacher-progress-bar {
+  width: 100%;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 0.75rem; /* Increased margin */
+}
+
+.teacher-progress {
+  height: 10px;
+  background: #1976d2;
+}
+
+.course-card {
+  background: white;
+  border-radius: 15px; /* Increased border-radius for smoother curves */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 360px; /* Increased width */
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.course-thumbnail {
+  position: relative;
+  height: 220px; /* Larger thumbnail */
+  overflow: hidden;
+}
+
+.course-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover .course-thumbnail img {
+  transform: scale(1.1); /* Slightly more pronounced hover effect */
+}
+
+.course-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7); /* Darker overlay for better contrast */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-overlay span {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.course-content {
+  padding: 1.5rem; /* More padding for a spacious look */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.course-content h3 {
+  margin: 0;
+  font-size: 1.5rem; /* Larger font size */
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.course-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.course-progress {
+  width: 100%;
+}
+
+.course-progress span {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 1rem; /* Larger font size */
+  color: #666;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px; /* Taller progress bar */
+  background: #f5f5f5;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #1976d2;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+/* Keyframe Animation for Fade-In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

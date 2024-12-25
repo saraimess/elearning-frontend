@@ -1,0 +1,156 @@
+.teacher-container .video-upload-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.teacher-container .modal-content {
+  background: white;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.teacher-container .modal-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teacher-container .close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.teacher-container .upload-form {
+  padding: 1.5rem;
+}
+
+.teacher-container .upload-area {
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  padding: 3rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.teacher-container .upload-area:hover {
+  border-color: #1976d2;
+  background: #f8f9fa;
+}
+
+.teacher-container .file-input {
+  display: none;
+}
+
+.teacher-container .upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.teacher-container .upload-label i {
+  font-size: 3rem;
+  color: #1976d2;
+}
+
+.teacher-container .file-types {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.teacher-container .video-preview-container {
+  margin-bottom: 1.5rem;
+}
+
+.teacher-container .video-preview {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.teacher-container .change-video {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.teacher-container .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.teacher-container .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.teacher-container .form-group input,
+.teacher-container .form-group textarea,
+.teacher-container .form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.teacher-container .upload-progress {
+  margin: 1.5rem 0;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.teacher-container .progress-bar {
+  height: 4px;
+  background: #1976d2;
+  transition: width 0.3s ease;
+}
+
+.teacher-container .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.teacher-container .cancel-btn {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.teacher-container .upload-btn {
+  padding: 0.75rem 1.5rem;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.teacher-container .upload-btn:hover {
+  background: #1565c0;
+}

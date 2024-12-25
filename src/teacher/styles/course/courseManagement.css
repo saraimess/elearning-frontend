@@ -1,0 +1,158 @@
+.teacher-container .course-management {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.teacher-container .course-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.teacher-container .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.teacher-container .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.teacher-container .form-group input,
+.teacher-container .form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.teacher-container .form-group input:focus,
+.teacher-container .form-group textarea:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+.teacher-container .form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.teacher-container .form-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.teacher-container .form-section h2 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.teacher-container .materials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.teacher-container .material-type {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.teacher-container .material-type h3 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.teacher-container .add-material-btn {
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border: 1px solid #1976d2;
+  color: #1976d2;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.teacher-container .add-material-btn:hover {
+  background: #1976d2;
+  color: white;
+}
+
+.teacher-container .save-course-btn {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.teacher-container .save-course-btn:hover {
+  background: #1565c0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .teacher-container .course-management {
+    padding: 1rem;
+  }
+
+  .teacher-container .course-form {
+    padding: 1.5rem;
+  }
+
+  .teacher-container .materials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animation for hover effects */
+.teacher-container .material-type {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.teacher-container .material-type:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Status indicators */
+.teacher-container .material-type::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  border: 2px solid #ddd;
+}
+
+.teacher-container .material-type.videos::before {
+  border-color: #1976d2;
+}
+
+.teacher-container .material-type.documents::before {
+  border-color: #4caf50;
+}
+
+.teacher-container .material-type.assignments::before {
+  border-color: #ff9800;
+}

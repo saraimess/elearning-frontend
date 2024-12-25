@@ -1,0 +1,28 @@
+.teacher-container .courses-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.teacher-container .courses-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+/* Flexbox layout for course cards */
+.teacher-container .course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Align to the left */
+  align-items: flex-start; /* Align to the top */
+  gap: 1rem;
+  padding: 1rem;
+  height: calc(100vh - 64px); /* Ensure the container takes full height minus the header */
+  align-content: flex-start; /* Align items to the top */
+  position: absolute;
+  top: 64px; /* Position under the search bar */
+  left: 0; /* Align to the left */
+  background: none; /* Remove any background color */
+}
